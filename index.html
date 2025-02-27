@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLUB FRANCISCO COLOANE</title>
+
+    <style>
+
+
+        /* Fondo con imagen y color */
+        body {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+            background-image: url('club mejorado sin nombre.png');
+            background-size: auto 200vh;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: scroll;
+            background-color: #7eb2cc;
+            min-height: 200vh;
+        }
+
+        /* Contenedor para el contenido */
+        .contenido {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos del menú */
+        .titulos {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra las imágenes */
+            gap: 20px; /* Ajusta el espacio entre las imágenes (cámbialo según necesidad) */
+        }
+
+        .titulo-imagen {
+            max-width: 50%; /* Ajusta el tamaño según necesites */
+            height: auto;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            list-style: none;
+            padding: 10px 0;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        /* Submenú */
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            list-style: none;
+            padding: 0;
+            min-width: 150px;
+        }
+
+        .submenu li {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .submenu a {
+            padding: 10px;
+            font-size: 18px;
+            display: block;
+        }
+
+        /* Mostrar submenú cuando pasas el cursor */
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* Efecto al pasar el cursor */
+        .menu a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="contenido">
+        <div class="titulos">
+            <img src="titulo 1.png" alt="Club Deportivo y Cultural Francisco Coloane" class="titulo-imagen">
+            <img src="titulo 2.png" alt="Subtítulo del club" class="titulo-imagen">
+        </div>
+        <br><br>
+
+        <!-- Menú de navegación con submenús -->
+        <ul class="menu">
+            <li><a href="nosotros.html">Nosotros</a>
+                <ul class="submenu">
+                    <li><a href="nosotros.html#mision-vision">Misión y visión</a></li>
+                    <li><a href="nosotros.html#reglamento">Reglamento</a></li>
+                    <li><a href="nosotros.html#redes">Redes</a></li>
+                </ul>
+            </li>
+            <li><a href="equipos.html">Equipos</a>
+                <ul class="submenu">
+                    <li><a href="equipos.html#juveniles">Juveniles</a></li>
+                    <li><a href="equipos.html#infantiles">Infantiles</a></li>
+                    <li><a href="equipos.html#peques">Peques</a></li>
+                </ul>
+            </li>
+            <li><a href="dirigentes.html">Dirigentes</a>
+                <ul class="submenu">
+                    <li><a href="dirigentes.html#directorio">Directorio</a></li>
+                    <li><a href="dirigentes.html#profesor">Profesor</a></li>
+                    <li><a href="dirigentes.html#comision">Comision Revisora de Cuentas</a></li>
+                </ul>
+            </li>
+            <li><a href="actividades.html">Actividades</a>
+                <ul class="submenu">
+                    <li><a href="actividades.html#frutbol">Torneo Frutbol</a></li>
+                    <li><a href="actividades.html#futbolton">Futbolton</a></li>
+                    <li><a href="actividades.html#ceremonia">Ceremonia Fin de Año</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a>
+                <ul class="submenu">
+                    <li><a href="contacto.html#whatsapp">Whatsapp</a></li>
+                    <li><a href="contacto.html#cupos">Cupos y Lista de Espera</a></li>
+                </ul>
+            </li>
+            <li><a href="historia.html">Historia</a>
+                <ul class="submenu">
+                    <li><a href="historia.html#deportivos">Logros Deportivos</a></li>
+                    <li><a href="historia.html#institucionales">Logros Institucionales</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <br><br>
+
+        <p>Bienvenidos a la página oficial del Club Ceportivo y Cultural Francisco Coloane</p>
+        <p>Desplázate hacia abajo para ver más del fondo</p>
+
+    </div>
+
+</body>
+</html>
