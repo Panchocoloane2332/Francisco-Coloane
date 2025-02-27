@@ -14,56 +14,48 @@
             overflow-x: hidden;
         }
 
-        /* Barra superior */
         .barra-superior {
             background-color: #7eb2cc;
             color: black;
-            padding: 15px 20px;
+            padding: 25px 20px;
             display: flex;
             align-items: center;
-            justify-content: center;
             width: 100%;
             position: fixed;
             top: 0;
             left: 0;
             box-sizing: border-box;
             z-index: 1000;
-        }
-
-        .barra-contenido {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            max-width: 1100px; /* Ajuste para centrar los elementos */
-            justify-content: space-between;
-        }
-
-        .logo {
-            height: 60px; /* Tamaño ajustado */
-            margin-left: 10px;
+            height: 90px; /* Altura de la barra superior para que no se vea adelgazada */
         }
 
         .titulo {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
             margin: 0;
-            text-align: center;
             flex-grow: 1;
         }
 
         .volver-inicio {
-            margin-right: 10px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); /* Centra la imagen */
         }
 
         .volver-inicio img {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             cursor: pointer;
         }
 
-        /* Contenido */
+        .logo {
+            position: absolute;
+            right: 20px;
+            height: 70px; /* Ajusta el tamaño del logo */
+        }
+
         .contenido {
-            margin-top: 100px;
+            margin-top: 120px;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -72,9 +64,14 @@
 
         .seccion {
             width: 80%;
-            max-width: 900px;
+            max-width: 800px;
             margin-bottom: 40px;
             text-align: center;
+            padding-top: 120px;
+        }
+
+        .seccion:last-child {
+            margin-bottom: 150px;
         }
 
         .seccion h2 {
@@ -84,36 +81,34 @@
             text-align: center;
         }
 
-        /* Contenedor de jugadores */
-        .jugadores {
+        .seccion .jugadores {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            grid-template-columns: repeat(4, 1fr); /* Máximo 4 por fila */
             gap: 20px;
             justify-content: center;
-            margin-top: 20px;
+            padding: 20px;
         }
 
         .jugador {
             background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
             padding: 10px;
+            border-radius: 10px;
             text-align: center;
             color: white;
         }
 
         .jugador img {
-            width: 100%;
-            max-width: 150px;
-            height: 150px;
-            border-radius: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
             object-fit: cover;
         }
 
         .jugador p {
             margin-top: 10px;
-            font-size: 16px;
+            font-weight: bold;
         }
-
+        
     </style>
 </head>
 <body>
